@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:20-alpine as client
+FROM --platform=linux/amd64 node:18-alpine as client
 USER node
 WORKDIR /usr/app
 COPY --chown=node:node  ./package*.json ./
